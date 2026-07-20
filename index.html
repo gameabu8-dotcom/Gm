@@ -30,7 +30,34 @@
     </form>
 </div>
 
-</body>
+</body>BottomNavigationBar(
+  currentIndex: _index,
+  onTap: (i) {
+    setState(() => _index = i);
+  },
+  items: const [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.home),
+      label: "Home",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.attach_money),
+      label: "Earning",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.sports_esports),
+      label: "Game",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.share),
+      label: "Share",
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.person),
+      label: "My Account",
+    ),
+  ],
+)
 </html>
 // Erga sign-up/register milkaa'ee booda
 if (registrationSuccess) {
